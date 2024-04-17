@@ -952,7 +952,16 @@ cart--header__middle.cart--header__two {
   top: 0;
   transition: 0.4s;
 }
+.nav-tabs .nav-item.show .main_cat_triger, .nav-tabs .main_cat_triger.active{
+  background-color: #cd3301;
+  color: white;
+  border: 0;
+  border-radius: 0;
+}
 
+.custom_main_menu_dropdown {
+  display: none; /* Hide dropdown menu by default */
+}
 .dept__menu ul li .dept__menu--dropdown {
   position: absolute;
   width: 100%;
@@ -961,7 +970,7 @@ cart--header__middle.cart--header__two {
   visibility: hidden;
   transition: 0.5s;
   padding: 20px 0;
-  border: 1px solid #d1d1d1;
+  /* border: 1px solid #d1d1d1; */
   z-index: 9;
   background: #fff;
 }
@@ -971,6 +980,7 @@ cart--header__middle.cart--header__two {
   transition: 0.5s;
   opacity: 1;
   top: 100%;
+  width: 1400px;
 }
 
 .dept__menu ul li .dept__menu--dropdown li a {
@@ -994,7 +1004,7 @@ cart--header__middle.cart--header__two {
   color: #3d3d3d;
 }
 
-.dept__menu ul li .dept__menu--dropdown::before,
+/* .dept__menu ul li .dept__menu--dropdown::before,
 .dept__menu ul li .dept__menu--dropdown::after {
   position: absolute;
   content: "";
@@ -1030,7 +1040,7 @@ cart--header__middle.cart--header__two {
   border-color: transparent transparent #fff transparent;
   right: 0;
   top: 0;
-}
+} */
 
 /* .dept__menu__dropdown */
 ul > li > ul.sub__menu.sub__dept--menu {
@@ -1144,7 +1154,7 @@ ul.sub__menu.sub__dept--menu li:hover ul.sub__menu.level2 {
 }
 
 .slider-active .slick-dots {
-  right: 23.3%;
+  right: 0;
   bottom: 7%;
 }
 .hero-area-three .slider-active .slick-dots {
@@ -3348,18 +3358,33 @@ html .ui-button.ui-state-disabled:active {
 .shop-details-area .cart-wrapper form .nice-select::after {
   right: 80px;
 }
-.extra_main_cat{
-    width: 250px;
+.extra_main_cat {
+  width: 250px;
 }
 /* Updated custom style with modified class names */
 .accordion .card-header:after {
-    font-family: 'FontAwesome';  
-    content: "-";
-    float: right; 
+  font-family: "FontAwesome";
+  content: "";
+  float: right;
+  background-image: url(https://cdn-icons-png.freepik.com/512/153/153608.png);
+  /* Define the size and positioning of the background image */
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-size: cover;
+  padding: 10px;
 }
+/* CSS */
 .accordion .card-header.collapsed:after {
-    /* symbol for "collapsed" panels */
-    content: "+"; 
+  /* Use Font Awesome plus icon as content */
+  content: ""; /* Unicode for the plus icon in Font Awesome */
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/015/286/969/small/plus-sign-icon-free-png.png);
+  /* Define the size and positioning of the background image */
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background-size: cover;
+  padding: 10px;
 }
 .shop-details-area .cart-wrapper a.cart-button {
   line-height: 40px;

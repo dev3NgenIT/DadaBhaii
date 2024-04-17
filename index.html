@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
-
   <body>
     <!-- Header -->
     <header class="header">
@@ -72,7 +71,9 @@
                   <div class="cart--header__list">
                     <ul class="list-inline">
                       <li>
-                        <a href="#"><i class="fal fa-user-plus"></i></a>
+                        <a href="registration.html"
+                          ><i class="fal fa-user-plus"></i
+                        ></a>
                       </li>
                       <li>
                         <a href="#"><i class="fal fa-heart"></i></a>
@@ -81,8 +82,8 @@
                         <a class="mini__cart--link" href="#"
                           ><i class="fal fa-bags-shopping"
                             ><span class="cart__count">3</span></i
-                          > </a
-                        >
+                          >
+                        </a>
                       </li>
                       <li>
                         <a href="#"><i class="fal fa-sync"></i></a>
@@ -164,11 +165,15 @@
           <div class="row">
             <div class="col-xl-3 col-lg-4 col-md-5 col-10">
               <!-- Extra shopping cart for mobile device start -->
-              <div class="cart--header__middle d-block d-md-none dept__menu-box">
+              <div
+                class="cart--header__middle d-block d-md-none dept__menu-box"
+              >
                 <div class="cart--header__list">
                   <ul class="list-inline">
                     <li>
-                      <a href="#"><i class="fal fa-user-plus"></i></a>
+                      <a href="registration.html"
+                        ><i class="fal fa-user-plus"></i
+                      ></a>
                     </li>
                     <li>
                       <a href="#"><i class="fal fa-heart"></i></a>
@@ -177,8 +182,8 @@
                       <a class="mini__cart--link" href="#"
                         ><i class="fal fa-bags-shopping"
                           ><span class="cart__count">3</span></i
-                        > </a
-                      >
+                        >
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -242,160 +247,196 @@
                 </div>
               </div>
               <!-- Extra shopping cart for mobile device end -->
-              <div class="dept__menu position-relative d-none d-md-block extra_main_cat">
+              <div
+                class="dept__menu position-relative d-none d-md-block extra_main_cat"
+              >
                 <nav>
                   <ul class="dept__menu--list">
                     <li>
                       <a
                         class="dept__menu-mlink f-900 cod__gray-color"
-                        href="JavaScript:Void(0);"
-                        >Shop By Category</a
+                        href="#"
+                        id="categoryLink"
                       >
-                      <ul class="dept__menu--dropdown open">
-                        <li class="dropdown">
-                          <a class="dept__menu--dlink" href="#"
-                            >Lamps & Lighting</a
+                        Shop By Category
+                      </a>
+                      <ul
+                        class="dept__menu--dropdown custom_main_menu_dropdown py-0"
+                        id="categoryDropdown"
+                      >
+                        <div class="row bg-white" style="border-top: 1px solid #eee;">
+                          <div
+                            class="col-lg-3 px-0"
+                            style="background-color: #eee"
                           >
-                          <ul class="sub__menu sub__dept--menu">
-                            <li><a href="#">Desktop</a></li>
-                            <li class="dropdown">
-                              <a href="#">Laptop</a>
-                              <ul class="sub__menu level2">
-                                <li><a href="#">Desktop</a></li>
-                                <li><a href="#">Laptop</a></li>
-                                <li><a href="#">Mobile</a></li>
-                                <li><a href="#">Tablet</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#">Mobile</a></li>
-                            <li><a href="#">Tablet</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a class="dept__menu--dlink" href="#"
-                            >Mattress & Bedding</a
-                          >
-                          <ul class="sub__menu sub__dept--menu">
-                            <li><a href="#">Desktop</a></li>
-                            <li class="dropdown">
-                              <a href="#">Laptop</a>
-                              <ul class="sub__menu level2">
-                                <li><a href="#">Desktop</a></li>
-                                <li><a href="#">Laptop</a></li>
-                                <li><a href="#">Mobile</a></li>
-                                <li><a href="#">Tablet</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#">Mobile</a></li>
-                            <li><a href="#">Tablet</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a class="dept__menu--dlink" href="#">Home wares</a>
-                          <ul class="sub__menu sub__dept--menu">
-                            <li><a href="#">Desktop</a></li>
-                            <li class="dropdown">
-                              <a href="#">Laptop</a>
-                              <ul class="sub__menu level2">
-                                <li><a href="#">Desktop</a></li>
-                                <li><a href="#">Laptop</a></li>
-                                <li><a href="#">Mobile</a></li>
-                                <li><a href="#">Tablet</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#">Mobile</a></li>
-                            <li><a href="#">Tablet</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a class="dept__menu--dlink" href="#">Housekeeping</a>
-                          <ul class="sub__menu sub__dept--menu">
-                            <li><a href="#">Desktop</a></li>
-                            <li class="dropdown">
-                              <a href="#">Laptop</a>
-                              <ul class="sub__menu level2">
-                                <li><a href="#">Desktop</a></li>
-                                <li><a href="#">Laptop</a></li>
-                                <li><a href="#">Mobile</a></li>
-                                <li><a href="#">Tablet</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#">Mobile</a></li>
-                            <li><a href="#">Tablet</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a class="dept__menu--dlink" href="#"
-                            >Showpiece & Wall Art</a
-                          >
-                        </li>
-                        <li>
-                          <a class="dept__menu--dlink" href="#"
-                            >Dining & Cabinetry</a
-                          >
-                        </li>
-                        <li class="dropdown">
-                          <a class="dept__menu--dlink" href="#"
-                            >Ceiling Light</a
-                          >
-                          <ul class="sub__menu sub__dept--menu">
-                            <li><a href="#">Desktop</a></li>
-                            <li class="dropdown">
-                              <a href="#">Laptop</a>
-                              <ul class="sub__menu level2">
-                                <li><a href="#">Desktop</a></li>
-                                <li><a href="#">Laptop</a></li>
-                                <li><a href="#">Mobile</a></li>
-                                <li><a href="#">Tablet</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#">Mobile</a></li>
-                            <li><a href="#">Tablet</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown">
-                          <a class="dept__menu--dlink" href="#"
-                            >Festive & Outdoor</a
-                          >
-                          <ul class="sub__menu sub__dept--menu">
-                            <li><a href="#">Desktop</a></li>
-                            <li class="dropdown">
-                              <a href="#">Laptop</a>
-                              <ul class="sub__menu level2">
-                                <li><a href="#">Desktop</a></li>
-                                <li><a href="#">Laptop</a></li>
-                                <li><a href="#">Mobile</a></li>
-                                <li><a href="#">Tablet</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#">Mobile</a></li>
-                            <li><a href="#">Tablet</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a class="dept__menu--dlink" href="#"
-                            >Comfoters & Sheets</a
-                          >
-                        </li>
-                        <li class="dropdown">
-                          <a class="dept__menu--dlink" href="#"
-                            >Other Accessories</a
-                          >
-                          <ul class="sub__menu sub__dept--menu">
-                            <li><a href="#">Desktop</a></li>
-                            <li class="dropdown">
-                              <a href="#">Laptop</a>
-                              <ul class="sub__menu level2">
-                                <li><a href="#">Desktop</a></li>
-                                <li><a href="#">Laptop</a></li>
-                                <li><a href="#">Mobile</a></li>
-                                <li><a href="#">Tablet</a></li>
-                              </ul>
-                            </li>
-                            <li><a href="#">Mobile</a></li>
-                            <li><a href="#">Tablet</a></li>
-                          </ul>
-                        </li>
+                            <ul
+                              class="nav nav-tabs flex-column px-0"
+                              id="myTab"
+                              role="tablist"
+                            >
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link main_cat_triger active"
+                                  id="Cosmetics-tab"
+                                  data-toggle="tab"
+                                  href="#Cosmetics"
+                                  role="tab"
+                                  aria-controls="Cosmetics"
+                                  aria-selected="true"
+                                  >Cosmetics</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link main_cat_triger"
+                                  id="Motorbike-tab"
+                                  data-toggle="tab"
+                                  href="#Motorbike"
+                                  role="tab"
+                                  aria-controls="Motorbike"
+                                  aria-selected="false"
+                                  >Motorbike</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link main_cat_triger"
+                                  id="Accessories-tab"
+                                  data-toggle="tab"
+                                  href="#Accessories"
+                                  role="tab"
+                                  aria-controls="Accessories"
+                                  aria-selected="false"
+                                  >Accessories</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link main_cat_triger"
+                                  id="Household-tab"
+                                  data-toggle="tab"
+                                  href="#Household"
+                                  role="tab"
+                                  aria-controls="Household"
+                                  aria-selected="false"
+                                  >Household</a
+                                >
+                              </li>
+                              <li class="nav-item">
+                                <a
+                                  class="nav-link main_cat_triger"
+                                  id="Lifestyle-tab"
+                                  data-toggle="tab"
+                                  href="#Lifestyle"
+                                  role="tab"
+                                  aria-controls="Lifestyle"
+                                  aria-selected="false"
+                                  >Lifestyle</a
+                                >
+                              </li>
+                              <div>
+                                <a
+                                  href="category.html"
+                                  class="btn btn-warning bg-warning rounded-pill mx-auto w-100"
+                                  >All Category</a
+                                >
+                              </div>
+                            </ul>
+                          </div>
+                          <div class="col-lg-9">
+                            <div class="tab-content" id="myTabContent">
+                              <div
+                                class="tab-pane fade show active"
+                                id="Cosmetics"
+                                role="tabpanel"
+                                aria-labelledby="Cosmetics-tab"
+                              >
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <p class="font-weight-bold pt-3">Network Accessories</p>
+                                    <ul>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                    </ul>
+                                    <hr class="p-0 m-0 mt-3 mb-2">
+                                    <a href="">View All</a>
+                                  </div>
+                                  <div class="col-lg-3">
+                                    <p class="font-weight-bold pt-3">Network Accessories</p>
+                                    <ul>
+                                      <li><a href="#" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                    </ul>
+                                    <hr class="p-0 m-0 mt-3 mb-2">
+                                    <a href="">View All</a>
+                                  </div>
+                                  <div class="col-lg-3">
+                                    <p class="font-weight-bold pt-3">Network Accessories</p>
+                                    <ul>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="#" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                    </ul>
+                                    <hr class="p-0 m-0 mt-3 mb-2">
+                                    <a href="">View All</a>
+                                  </div>
+                                  <div class="col-lg-3">
+                                    <p class="font-weight-bold pt-3">Network Accessories</p>
+                                    <ul>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                      <li><a href="" class="text-muted px-0 py-1">Lubricants & Solvents</a></li>
+                                    </ul>
+                                    <hr class="p-0 m-0 mt-3 mb-2">
+                                    <a href="">View All</a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="tab-pane fade"
+                                id="Motorbike"
+                                role="tabpanel"
+                                aria-labelledby="Motorbike-tab"
+                              >
+                                Motorbike
+                              </div>
+                              <div
+                                class="tab-pane fade"
+                                id="Accessories"
+                                role="tabpanel"
+                                aria-labelledby="Accessories-tab"
+                              >
+                                Accessories
+                              </div>
+                              <div
+                                class="tab-pane fade"
+                                id="Household"
+                                role="tabpanel"
+                                aria-labelledby="Household-tab"
+                              >
+                                Household
+                              </div>
+                              <div
+                                class="tab-pane fade"
+                                id="Lifestyle"
+                                role="tabpanel"
+                                aria-labelledby="Lifestyle-tab"
+                              >
+                                Lifestyle
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </ul>
                     </li>
                   </ul>
@@ -407,11 +448,15 @@
                 <nav id="mobile-menu">
                   <ul>
                     <li>
-                      <a href="">Home</a>
+                      <a href="index.html">Home</a>
                     </li>
 
                     <li class="mega-menu static dropdown-icon">
-                      <a href="">Brands</a>
+                      <a
+                        href="javascript:void(0)"
+                        onclick="window.location.href='brands.html'"
+                        >Brands</a
+                      >
                       <ul class="submenu mega-full">
                         <li>
                           <a href="">Brands 01</a>
@@ -484,7 +529,11 @@
                       </ul>
                     </li>
                     <li class="mega-menu static dropdown-icon">
-                      <a href="">Offers</a>
+                      <a
+                        href="javascript:void(0)"
+                        onclick="window.location.href='shop-page.html'"
+                        >Offers</a
+                      >
                       <ul class="submenu mega-full">
                         <li>
                           <a href="">Offers 01</a>
@@ -612,7 +661,7 @@
                   <span class="f-300">Discover Top</span>
                   <span class="f-800">Categories</span>
                 </h3>
-                <a class="grenadier-color" href="shop-collection.html"
+                <a class="grenadier-color" href="category.html"
                   >View All Category</a
                 >
               </div>
@@ -622,7 +671,7 @@
                 <div class="single-categories col-sm-12">
                   <div class="categories-box position-relative">
                     <div class="categories-thumb">
-                      <a href="#"
+                      <a href="category.html"
                         ><img
                           class="img"
                           src="img/categories/cate__thumb1.jpg"
@@ -637,7 +686,7 @@
                 <div class="single-categories col-sm-12">
                   <div class="categories-box position-relative">
                     <div class="categories-thumb">
-                      <a href="#"
+                      <a href="category.html"
                         ><img
                           class="img"
                           src="img/categories/cate__thumb2.jpg"
@@ -652,7 +701,7 @@
                 <div class="single-categories col-sm-12">
                   <div class="categories-box position-relative">
                     <div class="categories-thumb">
-                      <a href="#"
+                      <a href="category.html"
                         ><img
                           class="img"
                           src="img/categories/cate__thumb3.jpg"
@@ -667,7 +716,7 @@
                 <div class="single-categories col-sm-12">
                   <div class="categories-box position-relative">
                     <div class="categories-thumb">
-                      <a href="#"
+                      <a href="category.html"
                         ><img
                           class="img"
                           src="img/categories/cate__thumb4.jpg"
@@ -682,7 +731,7 @@
                 <div class="single-categories col-sm-12">
                   <div class="categories-box position-relative">
                     <div class="categories-thumb">
-                      <a href="#"
+                      <a href="category.html"
                         ><img
                           class="img"
                           src="img/categories/cate__thumb2.jpg"
@@ -3783,8 +3832,9 @@
                   <div class="contacts-address--text">
                     <span>Got Questions? Call Us 24/7</span>
                     <h5 class="f-800">
-                      +880 1714-243446 <br />
-                      +880 255020579
+                      <a href="tel(+880 1714-243446)">+880 1714-243446</a>
+                      <br />
+                      <a href="tel(+880 255020579)">+880 255020579</a>
                     </h5>
                   </div>
                 </div>
@@ -3813,12 +3863,12 @@
                   <ul>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="registration.html">Sign In</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="faq.html">Faq</a></li>
-                    <li><a href="#">Terms & Policy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="policy.html">Policy</a></li>
                     <li><a href="brands.html">Brands</a></li>
-                    <li><a href="#">Country</a></li>
-                    <li><a href="about.html">Offers</a></li>
+                    <li><a href="shop-page.html">Offers</a></li>
                   </ul>
                 </div>
               </div>
@@ -3916,5 +3966,33 @@
     <script src="js/Elemental.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      // JavaScript to toggle dropdown visibility
+      $(document).ready(function () {
+        $("#categoryLink").click(function (e) {
+          e.preventDefault(); // Prevent default link behavior
+          $("#categoryDropdown").slideToggle(); // Toggle dropdown visibility
+          e.stopPropagation(); // Prevent event from propagating further
+        });
+
+        // Prevent dropdown from closing when clicking inside
+        $("#categoryDropdown").click(function (e) {
+          e.stopPropagation(); // Prevent event from propagating further
+        });
+
+        // Close dropdown when clicking outside
+        $(document).click(function () {
+          $("#categoryDropdown").slideUp(); // Close dropdown
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#myTab a").click(function (e) {
+          e.preventDefault();
+          $(this).tab("show");
+        });
+      });
+    </script>
   </body>
 </html>
