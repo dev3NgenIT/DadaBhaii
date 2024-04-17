@@ -3625,7 +3625,7 @@ html .ui-button.ui-state-disabled:active {
   .dept__menu ul li .dept__menu--dropdown.open {
     width: 1322px;
   }
-  .dept__menu ul li .dept__menu--dropdown.open {
+  .main-menu ul li.mega-menu ul.submenu.mega-full {
     width: 1322px;
   }
 }
