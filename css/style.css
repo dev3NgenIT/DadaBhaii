@@ -3623,6 +3623,9 @@ html .ui-button.ui-state-disabled:active {
 
 @media only screen and (max-width: 1400px) {
   .dept__menu ul li .dept__menu--dropdown.open {
-    width: 1370px;
+    width: 1322px;
+  }
+  .dept__menu ul li .dept__menu--dropdown.open {
+    width: 1322px;
   }
 }
