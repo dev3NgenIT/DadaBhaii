@@ -1572,6 +1572,8 @@ ul.sub__menu.sub__dept--menu li:hover ul.sub__menu.level2 {
 .product__single:hover .product-action {
   opacity: 1;
   visibility: visible;
+  display: flex;
+  justify-content: center;
 }
 .product-action a {
   font-size: 20px;
