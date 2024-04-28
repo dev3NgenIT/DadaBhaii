@@ -72,94 +72,174 @@
                     <ul class="list-inline">
                       <li>
                         <div class="dropdown">
-                          <a href="" class="border-0 bg-none text-muted" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fal fa-user-plus text-black font-weight-bold"></i>
+                          <a
+                            href=""
+                            class="border-0 bg-none text-muted"
+                            type="button"
+                            id="dropdownMenuButton"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            <i
+                              class="fal fa-user-plus text-black font-weight-bold"
+                            ></i>
                           </a>
-                          <div class="dropdown-menu p-3" aria-labelledby="dropdownMenuButton">
-                            <a href="registration.html" class="btn btn-primary w-100">Login</a>
-                            <hr class="mb-2 mt-3">
-                            <p>First time here? <a href="" class="text-danger">Sign Up</a></p>
-                            <a class="dropdown-item" href="#"><i class="fal fa-user pr-2"></i> My Profile</a>
-                            <a class="dropdown-item" href="#"><i class="fal fa-star pr-2" aria-hidden="true"></i> My Favorites</a>
-                            <a class="dropdown-item" href="#"><i class="fal fa-list pr-2" aria-hidden="true"></i> My Booked</a>
+                          <div
+                            class="dropdown-menu p-3 dropdown-menu-right"
+                            aria-labelledby="dropdownMenuButton"
+                          >
+                            <a
+                              href="registration.html"
+                              class="btn cart-button w-100"
+                              >Login</a
+                            >
+                            <hr class="mb-2 mt-3" />
+                            <p>
+                              First time here?
+                              <a href="" class="text-danger">Sign Up</a>
+                            </p>
+                            <a class="dropdown-item" href="#"
+                              ><i class="fal fa-user pr-2"></i> My Profile</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fal fa-star pr-2"
+                                aria-hidden="true"
+                              ></i>
+                              My Favorites</a
+                            >
+                            <a class="dropdown-item" href="#"
+                              ><i
+                                class="fal fa-list pr-2"
+                                aria-hidden="true"
+                              ></i>
+                              My Booked</a
+                            >
                           </div>
                         </div>
                       </li>
                       <li class="">
-                        <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><i class="fal fa-heart font-weight-bold text-muted"></i></a>
+                        <a
+                          href="#"
+                          data-toggle="modal"
+                          data-target="#exampleModalCenter"
+                          ><i
+                            class="fal fa-heart font-weight-bold text-muted"
+                          ></i
+                        ></a>
                       </li>
                       <!-- Wish List Modal -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title pl-3 py-3" id="exampleModalCenterTitle">Your Wish List</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="table-responsive">
-          <table class="table">
-            <!-- Cart Header -->
-            <thead class="border-none" style="background-color: #cd3301; color: white;">
-              <tr>
-                <th style="width: 5%">SL</th>
-                <th style="width: 10%">Image</th>
-                <th style="width: 45%">Product Name</th>
-                <th style="width: 20%">Price</th>
-                <th style="width: 20%" class="text-center">Cart</th>
-              </tr>
-            </thead>
-            <!-- Cart Content -->
-            <tbody>
-              <tr class="border-bottom">
-                <td>1</td>
-                <td>
-                  <div>
-                    <img
-                      class="img-fluid"
-                      src="https://www.dadabhaai.com/storage/requestImg/GOxcja6O02k8Krgz38IwCtBPEu1JhcJqLgqb7ODJ.jpg"
-                      alt=""
-                    />
-                  </div>
-                </td>
-                <td>XIAOMI REDMI 12</td>
-                <td>18500 TK</td>
-                <td class="text-center">
-                  <div>
-                    <a href="">
-                      <i
-                        class="fa fa-plus text-primary delet-icons" title="Add To Cart"
-                      ></i>
-                    </a>
-                    <a href="">
-                      <i
-                        class="fa fa-trash text-danger delet-icons" title="Remove From Cart"
-                      ></i>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="modal-footer p-1 border-0">
-        <button type="button" class="cart-button" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="exampleModalCenter"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="exampleModalCenterTitle"
+                        aria-hidden="true"
+                      >
+                        <div
+                          class="modal-dialog modal-dialog-centered"
+                          role="document"
+                        >
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5
+                                class="modal-title pl-3 py-3"
+                                id="exampleModalCenterTitle"
+                              >
+                                Your Wish List
+                              </h5>
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                                aria-label="Close"
+                              >
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="table-responsive">
+                                <table class="table">
+                                  <!-- Cart Header -->
+                                  <thead
+                                    class="border-none"
+                                    style="
+                                      background-color: #cd3301;
+                                      color: white;
+                                    "
+                                  >
+                                    <tr>
+                                      <th style="width: 5%">SL</th>
+                                      <th style="width: 10%">Image</th>
+                                      <th style="width: 45%">Product Name</th>
+                                      <th style="width: 20%">Price</th>
+                                      <th
+                                        style="width: 20%"
+                                        class="text-center"
+                                      >
+                                        Cart
+                                      </th>
+                                    </tr>
+                                  </thead>
+                                  <!-- Cart Content -->
+                                  <tbody>
+                                    <tr class="border-bottom">
+                                      <td>1</td>
+                                      <td>
+                                        <div>
+                                          <img
+                                            class="img-fluid"
+                                            src="https://www.dadabhaai.com/storage/requestImg/GOxcja6O02k8Krgz38IwCtBPEu1JhcJqLgqb7ODJ.jpg"
+                                            alt=""
+                                          />
+                                        </div>
+                                      </td>
+                                      <td>XIAOMI REDMI 12</td>
+                                      <td>18500 TK</td>
+                                      <td class="text-center">
+                                        <div>
+                                          <a href="">
+                                            <i
+                                              class="fa fa-plus text-primary delet-icons"
+                                              title="Add To Cart"
+                                            ></i>
+                                          </a>
+                                          <a href="">
+                                            <i
+                                              class="fa fa-trash text-danger delet-icons"
+                                              title="Remove From Cart"
+                                            ></i>
+                                          </a>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="modal-footer p-1 border-0">
+                              <button
+                                type="button"
+                                class="cart-button"
+                                data-dismiss="modal"
+                              >
+                                Close
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <!-- Wish List Modal End -->
                       <li class="">
                         <a class="mini__cart--link" href="#"
-                          ><i class="fal fa-bags-shopping font-weight-bold text-muted"
-                            >
-                            <span class="cart__count">0</span>
-                            </i
+                          ><i
+                            class="fal fa-bags-shopping font-weight-bold text-muted"
                           >
+                            <span class="cart__count">0</span>
+                          </i>
                         </a>
                       </li>
                       <li class="d-none">
@@ -167,7 +247,7 @@
                       </li>
                     </ul>
                   </div>
-                 
+
                   <div class="mini__cart--box">
                     <ul>
                       <li class="mb-20">
@@ -336,7 +416,8 @@
                         href="#"
                         id="categoryLink"
                       >
-                      <i class="fa fa-th pr-2" aria-hidden="true"></i>  Category
+                        <i class="fa fa-th pr-2" aria-hidden="true"></i>
+                        Category
                       </a>
                       <ul
                         class="dept__menu--dropdown custom_main_menu_dropdown py-0"
@@ -416,7 +497,6 @@
                                 >
                               </li>
 
-
                               <li class="nav-item">
                                 <a
                                   class="nav-link main_cat_triger"
@@ -465,7 +545,6 @@
                                   >Gadgets</a
                                 >
                               </li>
-
 
                               <div>
                                 <a href="category.html" class="category_btn"
@@ -857,12 +936,6 @@
                         </li>
                       </ul>
                     </li>
-                    <li>
-                      <a href="about.html">About Us</a>
-                    </li>
-                    <li>
-                      <a href="contact.html">Contact Us</a>
-                    </li>
                   </ul>
                 </nav>
               </div>
@@ -1108,9 +1181,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1155,9 +1228,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1202,9 +1275,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1249,9 +1322,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1296,9 +1369,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1343,9 +1416,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1390,9 +1463,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1446,9 +1519,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1493,9 +1566,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1540,9 +1613,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1587,9 +1660,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1634,9 +1707,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1681,9 +1754,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1728,9 +1801,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1784,9 +1857,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1831,9 +1904,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1878,9 +1951,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1925,9 +1998,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -1972,9 +2045,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -2019,9 +2092,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -2066,9 +2139,9 @@
                           <div
                             class="product__content--rating d-flex justify-content-between align-items-center"
                           >
-                             <button class="btn btn-primary btn-sm">
-                          Add To Cart
-                        </button>
+                            <button class="btn btn-primary btn-sm">
+                              Add To Cart
+                            </button>
                             <div class="price">
                               <pf class="mb-0 grenadier-color f-600">
                                 $2,299.00
@@ -2947,7 +3020,7 @@
                       <span class="cate-name">SAMSUNG</span>
                       <h6 class="product__title mine__shaft-color f-700 mb-30">
                         <a href="product-details.html"
-                          >Wireless Audioing Systems Purple  degree</a
+                          >Wireless Audioing Systems Purple degree</a
                         >
                       </h6>
                     </div>
@@ -3615,7 +3688,8 @@
                       src="img/icon/notification-icon.png"
                       alt="notification"
                     />
-                    <span class="notification__title--heading f-800 white-color pl-3"
+                    <span
+                      class="notification__title--heading f-800 white-color pl-3"
                       >Subscribe for Join Us!</span
                     >
                   </div>
@@ -3672,79 +3746,91 @@
     <footer class="footer--area">
       <div class="footer--top pt-70 pb-25">
         <div class="contaner-fluid footer-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-4 col-lg-6 col-md-8 mb-30 order-md-3 order-lg-2">
-              <div class="logo--header__middle">
-                <div class="logo">
-                  <a class="logo__link" href="home.html"><img class="" width="250px" src="https://www.dadabhaai.com/storage/main/jaragroups404413.png" alt=""></a>
-                  <p class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, ullam? Qui quia nobis illum eius possimus nemo minus adipisci illo!</p>
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-xl-4 col-lg-6 col-md-8 mb-30 order-md-3 order-lg-2"
+              >
+                <div class="logo--header__middle">
+                  <div class="logo">
+                    <a class="logo__link" href="home.html"
+                      ><img
+                        class=""
+                        width="250px"
+                        src="https://www.dadabhaai.com/storage/main/jaragroups404413.png"
+                        alt=""
+                    /></a>
+                    <p class="pt-3">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Deserunt, ullam? Qui quia nobis illum eius possimus nemo
+                      minus adipisci illo!
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-xl-4 col-lg-6 col-md-8 mb-30 order-md-3 order-lg-2">
-              <div class="footer-widget">
-                <div class="footer-title">
-                  <h6 class="f-800">Get to Know Us</h6>
-                </div>
-                <div class="footer-menu">
-                  <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="registration.html">Sign In</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                    <li><a href="faq.html">Faq</a></li>
-                    <li><a href="terms.html">Terms</a></li>
-                    <li><a href="policy.html">Policy</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div
-              class="col-xl-2 mb-30 col-lg-6 col-md-4 order-md-2 order-lg-3 col-sm-6"
-            >
-              <div class="footer-widget">
-                <div class="footer-title">
-                  <h6 class="f-800">Contact Platform</h6>
-                </div>
-                <div class="footer-menu h1foote-menu2">
-                  <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">What's App</a></li>
-                    <li><a href="#">Skype</a></li>
-                  </ul>
+              <div
+                class="col-xl-4 col-lg-6 col-md-8 mb-30 order-md-3 order-lg-2"
+              >
+                <div class="footer-widget">
+                  <div class="footer-title">
+                    <h6 class="f-800">Get to Know Us</h6>
+                  </div>
+                  <div class="footer-menu">
+                    <ul>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="registration.html">Sign In</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                      <li><a href="faq.html">Faq</a></li>
+                      <li><a href="terms.html">Terms</a></li>
+                      <li><a href="policy.html">Policy</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div
-              class="col-xl-2 col-lg-6 col-md-4 mb-30 order-md-4 order-lg-4 col-sm-6"
-            >
-              <div class="footer-widget">
-                <div class="footer-title">
-                  <h6 class="f-800">Let Us Help You</h6>
-                  <p>
-                    Containing information about.
-                  </p>
+              <div
+                class="col-xl-2 mb-30 col-lg-6 col-md-4 order-md-2 order-lg-3 col-sm-6"
+              >
+                <div class="footer-widget">
+                  <div class="footer-title">
+                    <h6 class="f-800">Contact Platform</h6>
+                  </div>
+                  <div class="footer-menu h1foote-menu2">
+                    <ul>
+                      <li><a href="#">Facebook</a></li>
+                      <li><a href="#">What's App</a></li>
+                      <li><a href="#">Skype</a></li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="footer-menu h1foote-menu2">
-                  <form
-                    class="newsletter--form pos-rel"
-                    style="min-width: auto !important"
-                  >
-                    <input
-                      class="newsletter--input w-100"
-                      type="text"
-                      placeholder="Email Address ..."
-                    />
-                    <button class="btn newsletter--button" type="button">
-                      <img src="img/icon/plan-icon.png" alt="" />
-                    </button>
-                  </form>
+              </div>
+              <div
+                class="col-xl-2 col-lg-6 col-md-4 mb-30 order-md-4 order-lg-4 col-sm-6"
+              >
+                <div class="footer-widget">
+                  <div class="footer-title">
+                    <h6 class="f-800">Let Us Help You</h6>
+                    <p>Containing information about.</p>
+                  </div>
+                  <div class="footer-menu h1foote-menu2">
+                    <form
+                      class="newsletter--form pos-rel"
+                      style="min-width: auto !important"
+                    >
+                      <input
+                        class="newsletter--input w-100"
+                        type="text"
+                        placeholder="Email Address ..."
+                      />
+                      <button class="btn newsletter--button" type="button">
+                        <img src="img/icon/plan-icon.png" alt="" />
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
       <div class="footer-bottom gray-bg pt-20 pb-20">
         <div class="container">
